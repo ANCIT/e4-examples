@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_hfFdUPSgEeSxuIET3Y3V1Q" elementId="org.eclipse.e4.ide.application" bindingContexts="_hfFdWfSgEeSxuIET3Y3V1Q">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_hfFdUfSgEeSxuIET3Y3V1Q" label="Demp App" width="500" height="400"/>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_hfFdUPSgEeSxuIET3Y3V1Q" elementId="org.eclipse.e4.ide.application" bindingContexts="_hfFdWfSgEeSxuIET3Y3V1Q">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_hfFdUfSgEeSxuIET3Y3V1Q" label="Demp App" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_upm2gPSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_vJiTwPSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.perspective.0" label="Training">
+        <children xsi:type="basic:PartStack" xmi:id="_5KQx0PSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.partstack.0">
+          <children xsi:type="basic:Part" xmi:id="_8s5yIPSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.part.0" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.views.ViewONE" label="View ONE"/>
+        </children>
+      </children>
+    </children>
+  </children>
   <rootContext xmi:id="_hfFdWfSgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_hfFdWvSgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_hfFdW_SgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
