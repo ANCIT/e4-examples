@@ -4,7 +4,9 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
+import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.di.Focus;
+import org.eclipse.e4.ui.di.UIEventTopic;
 import org.eclipse.e4.ui.workbench.modeling.ESelectionService;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Tree;
@@ -71,6 +73,11 @@ public class ViewONE {
 				selectionService.setSelection(event.getSelection());
 			}
 		});
+	}
+	
+	@Inject
+	public void getNotified(@UIEventTopic("UPDATE") @Optional Object string) {
+		System.out.println(string);
 	}
 
 	@PreDestroy
