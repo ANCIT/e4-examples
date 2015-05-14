@@ -6,6 +6,8 @@ import javax.inject.Named;
 import javax.annotation.PostConstruct;
 
 import org.eclipse.e4.core.di.annotations.Optional;
+import org.eclipse.e4.ui.di.Persist;
+import org.eclipse.e4.ui.model.application.ui.MDirtyable;
 import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.e4.ui.services.internal.events.EventBroker;
 import org.eclipse.jface.viewers.ISelection;
@@ -27,6 +29,14 @@ public class ViewTWO {
 	}
 	
 	@Inject
+	MDirtyable dirty;
+	
+	@Persist
+	public void save() {
+		dirty.setDirty(false);
+	}
+	
+	@Inject
 	EventBroker eventBroker;
 	private Object firstElement;
 	
@@ -41,7 +51,8 @@ public class ViewTWO {
 			
 			@Override
 			public void modifyText(ModifyEvent e) {
-				eventBroker.post("UPDATE", text.getText());				
+				eventBroker.post("UPDATE", text.getText());	
+				dirty.setDirty(true);
 			}
 		});
 	}
