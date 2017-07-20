@@ -19,6 +19,9 @@
               <menus xsi:type="menu:PopupMenu" xmi:id="_shSGMG1FEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.popupmenu.clickmepopup" label="Click Me">
                 <children xsi:type="menu:DirectMenuItem" xmi:id="_3XMf0G1FEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.directmenuitem.clickme" label="Click Me" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.views.actions.ClickMeAction"/>
               </menus>
+              <toolbar xmi:id="_s2nVoG1IEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.toolbar.1">
+                <children xsi:type="menu:DirectToolItem" xmi:id="_uQGREG1IEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.directtoolitem.exit" label="Exit" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.ExitHandler"/>
+              </toolbar>
             </children>
           </children>
         </children>
