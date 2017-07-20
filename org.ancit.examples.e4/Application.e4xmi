@@ -21,6 +21,12 @@
               </menus>
               <toolbar xmi:id="_s2nVoG1IEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.toolbar.1">
                 <children xsi:type="menu:DirectToolItem" xmi:id="_uQGREG1IEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.directtoolitem.exit" label="Exit" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.ExitHandler"/>
+                <children xsi:type="menu:DirectToolItem" xmi:id="_k3pegG1JEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.directtoolitem.dropdown" label="Drop Down">
+                  <menu xmi:id="_nTP-QG1JEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.menu.dropdown" label="Drop Down">
+                    <children xsi:type="menu:DirectMenuItem" xmi:id="_ao5ykG1JEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.directmenuitem.clickme" label="Click ME" iconURI="platform:/plugin/org.ancit.examples.e4/icons/sample.png" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.views.actions.ClickMeAction"/>
+                    <children xsi:type="menu:DirectMenuItem" xmi:id="_bPU5YG1JEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.directmenuitem.exit" label="Exit" iconURI="platform:/plugin/org.ancit.examples.e4/icons/sample.png" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.ExitHandler"/>
+                  </menu>
+                </children>
               </toolbar>
             </children>
           </children>
