@@ -32,6 +32,7 @@
           </children>
         </children>
       </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_L2D-cG1LEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.perspective.sampleforswitching" label="Sample for switching"/>
     </children>
     <mainMenu xmi:id="_7KlyoGx5Eee1gMsDiL4bWg" elementId="org.eclipse.ui.main.menu">
       <children xsi:type="menu:Menu" xmi:id="_fc5HEGx6Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.menu.file" label="File">
@@ -42,17 +43,24 @@
       <children xsi:type="menu:ToolBar" xmi:id="_8YrHoGx_Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.toolbar.0">
         <children xsi:type="menu:HandledToolItem" xmi:id="_CLJckGyAEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handledtoolitem.exit" label="Exit" command="_AdwK0Gx5Eee1gMsDiL4bWg"/>
         <children xsi:type="menu:HandledToolItem" xmi:id="_7oVvgGyCEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handledtoolitem.openwizard" label="Open Wizard" iconURI="platform:/plugin/org.ancit.examples.e4/icons/sample.png" command="_2aLokGyCEee1gMsDiL4bWg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_r8ryEG1KEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handledtoolitem.perspectiveswitching" label="Perspective Switching" iconURI="platform:/plugin/org.ancit.examples.e4/icons/sample.png" command="_cRGqAG1KEee1gMsDiL4bWg">
+          <parameters xmi:id="_ysFpUG1KEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.parameter.switching" name="org.ancit.examples.e4.commandparameter.perspectiveparameter" value="org.ancit.examples.e4.perspective.sampleforswitching"/>
+        </children>
       </children>
     </trimBars>
   </children>
   <handlers xmi:id="_EiqDUGx8Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handler.0" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.ExitHandler" command="_AdwK0Gx5Eee1gMsDiL4bWg"/>
   <handlers xmi:id="_38JxoGyCEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handler.1" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.OpenWizardHandler" command="_2aLokGyCEee1gMsDiL4bWg"/>
+  <handlers xmi:id="_jH_M0G1LEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handler.2" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.PerspectiveSwitchingHandler" command="_cRGqAG1KEee1gMsDiL4bWg"/>
   <rootContext xmi:id="_hfFdWfSgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_hfFdWvSgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_hfFdW_SgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
   <commands xmi:id="_AdwK0Gx5Eee1gMsDiL4bWg" elementId="org.eclipse.ui.file.exit" commandName="Exit Command"/>
   <commands xmi:id="_2aLokGyCEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.command.openwizard" commandName="OpenWizard"/>
+  <commands xmi:id="_cRGqAG1KEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.command.perspectiveswitching" commandName="Perspective Switching">
+    <parameters xmi:id="_eZnOoG1KEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.commandparameter.perspectiveparameter" name="Prespective"/>
+  </commands>
   <addons xmi:id="_hfFdUvSgEeSxuIET3Y3V1Q" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_hfFdU_SgEeSxuIET3Y3V1Q" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_hfFdVPSgEeSxuIET3Y3V1Q" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
