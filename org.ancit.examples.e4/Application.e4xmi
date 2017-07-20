@@ -16,6 +16,9 @@
                 <tags>ViewMenu</tags>
                 <children xsi:type="menu:DirectMenuItem" xmi:id="_KNmr4Pe2EeSR9eSC-J0teQ" elementId="org.ancit.examples.e4.directmenuitem.0" label="Click ME" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.views.actions.ClickMeAction"/>
               </menus>
+              <menus xsi:type="menu:PopupMenu" xmi:id="_shSGMG1FEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.popupmenu.clickmepopup" label="Click Me">
+                <children xsi:type="menu:DirectMenuItem" xmi:id="_3XMf0G1FEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.directmenuitem.clickme" label="Click Me" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.views.actions.ClickMeAction"/>
+              </menus>
             </children>
           </children>
         </children>
