@@ -38,6 +38,10 @@
       <children xsi:type="menu:Menu" xmi:id="_fc5HEGx6Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.menu.file" label="File">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_jOYbsGx6Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handledmenuitem.exit" label="Exit" command="_AdwK0Gx5Eee1gMsDiL4bWg"/>
       </children>
+      <children xsi:type="menu:Menu" xmi:id="_yfBTEG4NEee2KYjCvt40bA" elementId="org.ancit.examples.e4.menu.preferences" label="Preferences">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_0NoxAG4NEee2KYjCvt40bA" elementId="org.ancit.examples.e4.handledmenuitem.addpreferences" label="Add Preferences" command="_v1DcoG4MEee2KYjCvt40bA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zRJvEG4XEee2KYjCvt40bA" elementId="org.ancit.examples.e4.handledmenuitem.retrievepreferences" label="Retrieve Preferences" command="__1fO0G4WEee2KYjCvt40bA"/>
+      </children>
     </mainMenu>
     <trimBars xmi:id="_tpO3sGx_Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.trimbar.0">
       <children xsi:type="menu:ToolBar" xmi:id="_8YrHoGx_Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.toolbar.0">
@@ -52,6 +56,8 @@
   <handlers xmi:id="_EiqDUGx8Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handler.0" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.ExitHandler" command="_AdwK0Gx5Eee1gMsDiL4bWg"/>
   <handlers xmi:id="_38JxoGyCEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handler.1" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.OpenWizardHandler" command="_2aLokGyCEee1gMsDiL4bWg"/>
   <handlers xmi:id="_jH_M0G1LEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handler.2" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.PerspectiveSwitchingHandler" command="_cRGqAG1KEee1gMsDiL4bWg"/>
+  <handlers xmi:id="_u4JIcG4MEee2KYjCvt40bA" elementId="org.ancit.examples.e4.handler.addPref" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.preferences.AddPreferenceValueHandler" command="_v1DcoG4MEee2KYjCvt40bA"/>
+  <handlers xmi:id="_1g3u8G4XEee2KYjCvt40bA" elementId="org.ancit.examples.e4.handler.retrievePref" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.handlers.preferences.RetrievePreferenceValueHandler" command="__1fO0G4WEee2KYjCvt40bA"/>
   <rootContext xmi:id="_hfFdWfSgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
     <children xmi:id="_hfFdWvSgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_hfFdW_SgEeSxuIET3Y3V1Q" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
@@ -61,6 +67,8 @@
   <commands xmi:id="_cRGqAG1KEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.command.perspectiveswitching" commandName="Perspective Switching">
     <parameters xmi:id="_eZnOoG1KEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.commandparameter.perspectiveparameter" name="Prespective"/>
   </commands>
+  <commands xmi:id="_v1DcoG4MEee2KYjCvt40bA" elementId="org.ancit.examples.e4.command.addpreferencevalue" commandName="Add PreferenceValue"/>
+  <commands xmi:id="__1fO0G4WEee2KYjCvt40bA" elementId="org.ancit.examples.e4.command.retrievepreferencevalue" commandName="Retrieve PreferenceValue"/>
   <addons xmi:id="_hfFdUvSgEeSxuIET3Y3V1Q" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_hfFdU_SgEeSxuIET3Y3V1Q" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_hfFdVPSgEeSxuIET3Y3V1Q" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
