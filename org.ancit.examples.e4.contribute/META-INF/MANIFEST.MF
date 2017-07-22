@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Contribute
+Bundle-SymbolicName: org.ancit.examples.e4.contribute;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.ancit.examples.e4.contribute.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.e4.ui.model.workbench;bundle-version="1.1.100.v20150407-1430"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

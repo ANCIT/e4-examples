@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_m09NUG6JEee2KYjCvt40bA">
+  <imports xsi:type="commands:Command" xmi:id="_m09NUW6JEee2KYjCvt40bA" elementId="org.ancit.examples.e4.command.addpreferencevalue" commandName="Add PreferenceValue"/>
+  <imports xsi:type="commands:Command" xmi:id="_m09NUm6JEee2KYjCvt40bA" elementId="org.ancit.examples.e4.command.retrievepreferencevalue" commandName="Retrieve PreferenceValue"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_m09NU26JEee2KYjCvt40bA" featurename="children" parentElementId="org.eclipse.ui.main.menu">
+    <elements xsi:type="menu:Menu" xmi:id="_m09NVG6JEee2KYjCvt40bA" elementId="org.ancit.examples.e4.menu.preferences" label="Preferences">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_m09NVW6JEee2KYjCvt40bA" elementId="org.ancit.examples.e4.handledmenuitem.addpreferences" label="Add Preferences" command="_m09NUW6JEee2KYjCvt40bA"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_m09NVm6JEee2KYjCvt40bA" elementId="org.ancit.examples.e4.handledmenuitem.retrievepreferences" label="Retrieve Preferences" command="_m09NUm6JEee2KYjCvt40bA"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
