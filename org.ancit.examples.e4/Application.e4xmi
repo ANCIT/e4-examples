@@ -4,7 +4,12 @@
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_upm2gPSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_vJiTwPSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.perspective.0" label="Training">
         <children xsi:type="basic:PartStack" xmi:id="_5KQx0PSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.partstack.0">
-          <children xsi:type="basic:Part" xmi:id="_8s5yIPSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.part.0" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.views.ViewONE" label="View ONE"/>
+          <children xsi:type="basic:Part" xmi:id="_8s5yIPSjEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.part.0" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.views.ViewONE" label="View ONE">
+            <menus xmi:id="_staUEHBuEeeklZZ9JVGwDQ" elementId="org.ancit.examples.e4.menu.2">
+              <tags>ViewMenu</tags>
+              <children xsi:type="menu:DirectMenuItem" xmi:id="_tPJIIHBuEeeklZZ9JVGwDQ" elementId="org.ancit.examples.e4.directmenuitem.opendialog" label="Open Dialog" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.views.actions.OpenDialogViewAction"/>
+            </menus>
+          </children>
         </children>
         <children xsi:type="basic:PartSashContainer" xmi:id="_psDZsPWbEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.partsashcontainer.0">
           <children xsi:type="basic:PartStack" xmi:id="_qTLrIPWbEeSxuIET3Y3V1Q" elementId="org.ancit.examples.e4.partstack.1">
@@ -43,6 +48,14 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_0lUpcG7XEee2KYjCvt40bA" elementId="org.ancit.examples.e4.handledmenuitem.1" command="_AzsgQG7XEee2KYjCvt40bA"/>
       </children>
     </mainMenu>
+    <windows xsi:type="basic:Dialog" xmi:id="_OHFD8HBuEeeklZZ9JVGwDQ" elementId="org.ancit.examples.e4.dialog.sampledialog" toBeRendered="false" label="Sample Dialog" width="400" height="300">
+      <children xsi:type="basic:Part" xmi:id="_eUBzsHBuEeeklZZ9JVGwDQ" elementId="org.ancit.examples.e4.part.dialogpart" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.dialog.DialogPart" label="Dialog Part"/>
+      <mainMenu xmi:id="_TFTRcHBuEeeklZZ9JVGwDQ" elementId="org.ancit.examples.e4.menu.1">
+        <children xsi:type="menu:Menu" xmi:id="_T4x80HBuEeeklZZ9JVGwDQ" elementId="org.ancit.examples.e4.menu.dialogmenu" label="Dialog Menu">
+          <children xsi:type="menu:DirectMenuItem" xmi:id="_VPvvwHBuEeeklZZ9JVGwDQ" elementId="org.ancit.examples.e4.directmenuitem.dialogmenuitem" label="Dialog Menu Item" contributionURI="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.dialog.actions.DialogMenuItem"/>
+        </children>
+      </mainMenu>
+    </windows>
     <trimBars xmi:id="_tpO3sGx_Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.trimbar.0">
       <children xsi:type="menu:ToolBar" xmi:id="_8YrHoGx_Eee1gMsDiL4bWg" elementId="org.ancit.examples.e4.toolbar.0">
         <children xsi:type="menu:HandledToolItem" xmi:id="_CLJckGyAEee1gMsDiL4bWg" elementId="org.ancit.examples.e4.handledtoolitem.exit" label="Exit" command="_AdwK0Gx5Eee1gMsDiL4bWg"/>
