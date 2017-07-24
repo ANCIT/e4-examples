@@ -1,9 +1,13 @@
 package org.ancit.examples.e4.views;
 
+import java.util.ArrayList;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
+import javax.inject.Named;
 
+import org.ancit.examples.e4.model.AddressBook;
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.di.Focus;
 import org.eclipse.e4.ui.di.UIEventTopic;
@@ -30,12 +34,17 @@ public class ViewONE {
 			return getChildren(inputElement);
 		}
 		public Object[] getChildren(Object parentElement) {
-			return new Object[] { "item_0", "item_1", "item_2" };
+			if (parentElement instanceof AddressBook) {
+				AddressBook book = (AddressBook) parentElement;
+				return book.getContacts().toArray();
+			}
+			return new ArrayList().toArray();
 		}
 		public Object getParent(Object element) {
 			return null;
 		}
 		public boolean hasChildren(Object element) {
+			
 			return getChildren(element).length > 0;
 		}
 	}
@@ -58,13 +67,13 @@ public class ViewONE {
 	 * Create contents of the view part.
 	 */
 	@PostConstruct
-	public void createControls(Composite parent) {
+	public void createControls(Composite parent, @Named("LoadedBook") @Optional AddressBook addressBook) {
 		
 		TreeViewer treeViewer = new TreeViewer(parent, SWT.BORDER);
 		Tree tree = treeViewer.getTree();
 		treeViewer.setContentProvider(new TreeContentProvider());
 		treeViewer.setLabelProvider(new ViewerLabelProvider());
-		treeViewer.setInput(new Object());
+		treeViewer.setInput(addressBook);
 		
 		treeViewer.addSelectionChangedListener(new ISelectionChangedListener() {
 			

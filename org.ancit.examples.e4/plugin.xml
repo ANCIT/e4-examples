@@ -15,6 +15,10 @@
                name="appName"
                value="org.ancit.examples.e4">
          </property>
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://org.ancit.examples.e4/org.ancit.examples.e4.lifecycle.E4LifeCycle">
+         </property>
       </product>
    </extension>
 
