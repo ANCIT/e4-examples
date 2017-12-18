@@ -9,4 +9,5 @@
   <addons xmi:id="_AlE61eQaEee5HbxiHca44A" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_AlE61uQaEee5HbxiHca44A" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
   <addons xmi:id="_AlE61-QaEee5HbxiHca44A" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_RLL0oOQeEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.addon.ExampleSelectionServiceAddOn" contributionURI="bundleclass://org.ancit.examples.e3e4/org.ancit.examples.e3e4.addons.ExampleSelectionServiceAddOn"/>
 </application:Application>

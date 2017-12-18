@@ -25,6 +25,9 @@ public class E4View {
 	ESelectionService selectionService;
 	
 	@Inject
+	ExampleSelectionService exampleSelectionService;
+	
+	@Inject
 	public E4View() {
 		
 	}
@@ -42,7 +45,6 @@ public class E4View {
 			public void selectionChanged(SelectionChangedEvent event) {
 				selectionService.setSelection(event.getSelection());
 				
-				ExampleSelectionService exampleSelectionService = new ExampleSelectionService();
 				exampleSelectionService.setSelection(event.getSelection());
 			}
 		});
