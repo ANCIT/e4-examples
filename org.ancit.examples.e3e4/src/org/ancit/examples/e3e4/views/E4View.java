@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import org.ancit.examples.e3e4.services.ExampleSelectionService;
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.e4.ui.workbench.modeling.ESelectionService;
@@ -40,6 +41,9 @@ public class E4View {
 			@Override
 			public void selectionChanged(SelectionChangedEvent event) {
 				selectionService.setSelection(event.getSelection());
+				
+				ExampleSelectionService exampleSelectionService = new ExampleSelectionService();
+				exampleSelectionService.setSelection(event.getSelection());
 			}
 		});
 	}
@@ -49,7 +53,10 @@ public class E4View {
 		System.out.println("E4 View : Selection Listener : "+selection);
 	}
 	
-	
+	@Inject
+	public void setExampleSelection(@Named(ExampleSelectionService.MY_SELECTION) @Optional Object object) {
+		System.out.println("E4 View : Custom Selection Service" +  object);
+	}
 	
 	
 }
