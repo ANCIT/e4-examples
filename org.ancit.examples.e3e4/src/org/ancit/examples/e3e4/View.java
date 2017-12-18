@@ -1,12 +1,15 @@
 package org.ancit.examples.e3e4;
 
 import org.eclipse.jface.viewers.ArrayContentProvider;
+import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.ui.ISelectionListener;
 import org.eclipse.ui.ISharedImages;
+import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.part.ViewPart;
 
@@ -45,6 +48,15 @@ public class View extends ViewPart {
 		
 		//Registering a Viewer on E3 View as SelectionProvider
 		getSite().setSelectionProvider(viewer);
+		
+		//Registering a View as E3 SelectionListener
+		getSite().getPage().addSelectionListener(new ISelectionListener() {
+			
+			@Override
+			public void selectionChanged(IWorkbenchPart part, ISelection selection) {
+				System.out.println("E3 View : Selection Listener : "+selection);
+			}
+		});
 	}
 
 	/**
