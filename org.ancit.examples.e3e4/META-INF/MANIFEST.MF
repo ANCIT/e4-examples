@@ -7,4 +7,6 @@ Bundle-Activator: org.ancit.examples.e3e4.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: javax.annotation;version="1.0.0";resolution:=optional,
+ javax.inject;version="1.0.0"
 Bundle-ActivationPolicy: lazy

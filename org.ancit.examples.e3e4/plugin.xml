@@ -38,6 +38,13 @@
                relationship="left"
                id="org.ancit.examples.e3e4.view">
          </view>
+         <view
+               id="org.ancit.examples.e3e4.partdescriptor.e4view"
+               minimized="false"
+               ratio="0.5f"
+               relationship="right"
+               relative="org.ancit.examples.e3e4.view">
+         </view>
       </perspectiveExtension>
    </extension>
    <extension
