@@ -19,4 +19,11 @@
       </children>
     </elements>
   </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_KoZp0OQuEee5HbxiHca44A" featurename="trimContributions" parentElementId="xpath:/">
+    <elements xsi:type="menu:TrimContribution" xmi:id="_cTucEOQuEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.trimcontribution.0" parentId="org.eclipse.ui.main.toolbar">
+      <children xsi:type="menu:ToolBar" xmi:id="_X5V7cOQuEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_gnYCkOQuEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.handledtoolitem.e4toolitem" label="e4 ToolItem" command="_2exekOQsEee5HbxiHca44A"/>
+      </children>
+    </elements>
+  </fragments>
 </fragment:ModelFragments>
