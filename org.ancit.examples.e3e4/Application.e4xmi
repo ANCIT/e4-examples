@@ -2,6 +2,7 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_AlE60OQaEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.application">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_DEyegOQaEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.trimmedwindow.0"/>
   <descriptors xmi:id="_in-_gOQaEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.partdescriptor.e4view" label="E4 View" contributionURI="bundleclass://org.ancit.examples.e3e4/org.ancit.examples.e3e4.views.E4View">
+    <tags>View</tags>
     <toolbar xmi:id="_GijaUOQkEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.toolbar.0">
       <children xsi:type="menu:HandledToolItem" xmi:id="_HAbCEOQkEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.handledtoolitem.samplee3-e4command" label="Sample E3-E4 Command" command="_EG0-wOQkEee5HbxiHca44A"/>
       <children xsi:type="menu:DirectToolItem" xmi:id="__J7KcOQkEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.directtoolitem.samplee4directitem" label="Sample E4 Direct Item" iconURI="platform:/plugin/org.ancit.examples.e3e4/icons/sample.gif" contributionURI="bundleclass://org.ancit.examples.e3e4/org.ancit.examples.e3e4.handlers.E4DirectItemAction"/>
