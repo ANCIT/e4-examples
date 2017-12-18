@@ -53,6 +53,12 @@
                relative="org.ancit.examples.e3e4.partdescriptor.e4view"
                visible="false">
          </view>
+         <view
+               id="org.eclipse.ui.views.PropertySheet"
+               minimized="false"
+               relationship="bottom"
+               relative="org.ancit.examples.e3e4.view">
+         </view>
       </perspectiveExtension>
    </extension>
    <extension
