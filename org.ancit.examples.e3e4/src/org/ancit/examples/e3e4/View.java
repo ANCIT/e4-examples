@@ -42,6 +42,9 @@ public class View extends ViewPart {
 		viewer.setLabelProvider(new ViewLabelProvider());
 		// Provide the input to the ContentProvider
 		viewer.setInput(new String[] {"One", "Two", "Three"});
+		
+		//Registering a Viewer on E3 View as SelectionProvider
+		getSite().setSelectionProvider(viewer);
 	}
 
 	/**
