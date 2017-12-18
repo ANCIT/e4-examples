@@ -4,6 +4,7 @@ package org.ancit.examples.e3e4.addons;
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
+import org.ancit.examples.e3e4.contextFunction.ExampleContextFunction;
 import org.ancit.examples.e3e4.services.ExampleSelectionService;
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.di.annotations.Optional;
@@ -24,7 +25,7 @@ public class ExampleSelectionServiceAddOn {
 	@PostConstruct
 	public void init(IEclipseContext context) {
 		context.set(ExampleSelectionService.class.getName(),
-				new ExampleSelectionService());
+				new ExampleContextFunction());
 	}
 
 }
