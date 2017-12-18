@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import org.ancit.examples.e3e4.annotations.SelectionServiceAnnotation;
 import org.ancit.examples.e3e4.services.ExampleSelectionService;
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.services.IServiceConstants;
@@ -33,7 +34,7 @@ public class E4View {
 	}
 	
 	@PostConstruct
-	public void postConstruct(Composite parent) {
+	public void postConstruct(Composite parent, @SelectionServiceAnnotation(message="My E4 View") String message) {
 		ListViewer listViewer = new ListViewer(parent);
 		listViewer.setContentProvider(ArrayContentProvider.getInstance());
 		listViewer.setLabelProvider(new LabelProvider());
@@ -48,6 +49,8 @@ public class E4View {
 				exampleSelectionService.setSelection(event.getSelection());
 			}
 		});
+		
+		System.out.println("Inside PostContruct >> "+message);
 	}
 	
 	@Inject
