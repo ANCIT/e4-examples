@@ -4,6 +4,7 @@
   <descriptors xmi:id="_in-_gOQaEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.partdescriptor.e4view" label="E4 View" contributionURI="bundleclass://org.ancit.examples.e3e4/org.ancit.examples.e3e4.views.E4View">
     <toolbar xmi:id="_GijaUOQkEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.toolbar.0">
       <children xsi:type="menu:HandledToolItem" xmi:id="_HAbCEOQkEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.handledtoolitem.samplee3-e4command" label="Sample E3-E4 Command" command="_EG0-wOQkEee5HbxiHca44A"/>
+      <children xsi:type="menu:DirectToolItem" xmi:id="__J7KcOQkEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.directtoolitem.samplee4directitem" label="Sample E4 Direct Item" iconURI="platform:/plugin/org.ancit.examples.e3e4/icons/sample.gif" contributionURI="bundleclass://org.ancit.examples.e3e4/org.ancit.examples.e3e4.handlers.E4DirectItemAction"/>
     </toolbar>
   </descriptors>
   <commands xmi:id="_EG0-wOQkEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.commands.sampleCommand"/>

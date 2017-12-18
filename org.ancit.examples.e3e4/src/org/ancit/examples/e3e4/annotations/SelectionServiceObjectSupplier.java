@@ -1,6 +1,5 @@
 package org.ancit.examples.e3e4.annotations;
 
-import org.ancit.examples.e3e4.services.ExampleSelectionService;
 import org.eclipse.e4.core.di.suppliers.ExtendedObjectSupplier;
 import org.eclipse.e4.core.di.suppliers.IObjectDescriptor;
 import org.eclipse.e4.core.di.suppliers.IRequestor;
