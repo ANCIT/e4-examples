@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="ASCII"?>
-<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_ARz4MOQoEee5HbxiHca44A">
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ARz4MOQoEee5HbxiHca44A">
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_CV-IUOQoEee5HbxiHca44A" featurename="descriptors" parentElementId="xpath:/">
     <elements xsi:type="basic:PartDescriptor" xmi:id="_Hl6_AOQoEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.partdescriptor.e4viewfragment" label="E4 View Fragment" contributionURI="bundleclass://org.ancit.examples.e3e4.fragments/org.ancit.examples.e3e4.fragments.E4ViewFragment">
       <tags>View</tags>
       <tags>categoryTag:Other</tags>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_wlL1AOQsEee5HbxiHca44A" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_2exekOQsEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.command.e4command" commandName="E4 Command"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_73R0UOQsEee5HbxiHca44A" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="__uiZwOQsEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.handler.0" contributionURI="bundleclass://org.ancit.examples.e3e4.fragments/org.ancit.examples.e3e4.fragments.handlers.E4Handler" command="_2exekOQsEee5HbxiHca44A"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_GtZCQOQtEee5HbxiHca44A" featurename="menuContributions" parentElementId="xpath:/">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_JwRkcOQtEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.menucontribution.0" positionInParent="after=additions" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_SzMWcOQtEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.menu.e4mainmenu" label="e4 Main Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_VKHxkOQtEee5HbxiHca44A" elementId="org.ancit.examples.e3e4.fragments.handledmenuitem.e4menuitem" label="E4 Menu Item" command="_2exekOQsEee5HbxiHca44A"/>
+      </children>
     </elements>
   </fragments>
 </fragment:ModelFragments>
